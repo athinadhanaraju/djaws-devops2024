@@ -4,7 +4,8 @@ pipeline {
     stage ('welocme note') {
       steps {
         script {
-          println "welcome to Jenkins pipeline script"
+          subject="jenkinspac"
+          println "value of the subject is $(subject)"
         }
       }
     }
