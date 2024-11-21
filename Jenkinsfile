@@ -5,7 +5,7 @@ pipeline {
       steps {
         script {
           subject="jenkinspac"
-          println "value of the subject is $(subject)"
+          println "value of the subject is ${subject}"
         }
       }
     }
