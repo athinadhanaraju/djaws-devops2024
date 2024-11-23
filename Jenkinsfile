@@ -1,16 +1,16 @@
 pipeline {
   agent any
   stages{
-    stage ('working with loops') {
+    stage ('working with file operations') {
       steps {
         script {
-        i=1
-        while (i <=10) {
-          println "i value is ${i}"
-          i=i+1   
+           File file = new File("/tmp/testdata.txt")
+           println file.readLines()
+           for(line in file.readLines()){
+             println "my line is ${line}"
+           }
           }
         }
       }
     }
   }
-}
