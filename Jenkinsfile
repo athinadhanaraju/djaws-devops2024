@@ -7,10 +7,10 @@ script {
 a=10
 b=20
 if (a > b) {
-println " a value is big ${a} "
+println "a value is big ${a}"
 }
 else {
-println " b value is big $ {b} " 
+println "b value is big ${b}" 
 }
 }
 }
