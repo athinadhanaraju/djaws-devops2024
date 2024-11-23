@@ -12,12 +12,12 @@ pipeline {
         script{
           subject="jenkinspac"
           println "value of the subject is ${subject}"
-          # working with predefined variables
+          // Working with predefined variables
           println "my workspace is ${WORKSPACE}"
           println "my build no is ${BUILD_NUMBER}"
-          # environment variables
+          // environment variables
           println "my java home environment values are ${env.JAVA_HOME}"
-          # parameters variables
+          // parameters variables
           println "my env values is ${params.ENV}"
         }
       }
