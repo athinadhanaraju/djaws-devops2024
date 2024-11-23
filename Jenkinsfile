@@ -1,19 +1,21 @@
 pipeline {
-agent any
-stages{
-stage ('working with conditions') {
-steps {
-script {
-a=10
-b=20
-if (a > b) {
-println "a value is big ${a}"
-}
-else {
-println "b value is big ${b}" 
-}
-}
-}
-}
-}
-}
+  agent any
+  stages{
+    stage ('working with loops') {
+      steps {
+        script {
+          for (i=1;i<=10;i++)
+            println "i value is ${i} "
+          }
+          # jenkins code
+          lis1=[10,20,30,40,50]
+          for ( element in lis1) {
+          println " my element is ${element} "  
+          }
+          # python code
+          # for i in lis1:
+          # print(i)   
+          }
+        }
+      }
+    }
