@@ -8,9 +8,9 @@ pipeline {
             println "i value is ${i} "
           }
           //jenkins code
-          lis1=[10,20,30,40,50]
-          for ( element in lis1) {
-          println " my element is ${element} "  
+          lis1=[10,20,30,40]
+          for (element in lis1) {
+            println "my element is ${element}"  
           }
           //python code
           //for i in lis1:
